@@ -1,7 +1,6 @@
 # Serverless EBS Volume Tag Enforcer | Penny Pincher
 Creating `EBS Volumes` is easy, But maintaining them is hard. Especially when there are no `Tags` to describe their purpose. To make our jobs easier, we will automate the clean up action with AWS Lambda Functions.
 
-#### Follow this article in [Youtube](https://www.youtube.com/watch?v=UL0VWUnstUU&t=0s&list=PLxzKY3wu0_FKok5gI1v4g4S-g-PLaW9YD&index=9)
 
 Our Boto Script will do the following actions and Delete the ones without any tags or the explicit exclude tags
 1. Scan for `EBS Volumes` in `Available` State
@@ -10,7 +9,7 @@ Our Boto Script will do the following actions and Delete the ones without any ta
    1. Without any `Tags`
    1. With `Tags` that are not 'Pre-Approved`
 
-![Fig : Valaxy-Automated-CleanUp](https://raw.githubusercontent.com/miztiik/serverless-ebs-penny-pincher/master/images/serverless-ebs-penny-pincher.jpg)
+![Fig : (https://raw.githubusercontent.com/miztiik/serverless-ebs-penny-pincher/master/images/serverless-ebs-penny-pincher.jpg)
 
 ## Pre-Requisities
 We will need the following pre-requisites to successfully complete this activity,
@@ -33,7 +32,7 @@ globalVars  = {}
 globalVars['Owner']                 = "Miztiik"
 globalVars['Environment']           = "Test"
 globalVars['REGION_NAME']           = "ap-south-1"
-globalVars['tagName']               = "Valaxy-Serverless-EBS-Penny-Pincher"
+globalVars['tagName']               = "Serverless-EBS-Penny-Pincher"
 globalVars['findNeedle']            = "Name"
 globalVars['tagsToExclude']         = "Do-Not-Delete"
 
